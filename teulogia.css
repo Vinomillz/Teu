@@ -1,0 +1,221 @@
+body {
+	margin: 0;
+}
+.logo {
+	width: 91px;
+	height: 40px;
+	flex-shrink: 0;
+	stroke-width: 5px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+#modal {
+	background-image: url(images/depositphotos_251975944-stock-photo-smiling-deaf-boy-learning-sign-2\ 1.png);
+	display: flex;
+	z-index: 1000;
+	justify-content: space-between;
+	height: 60vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+#modal span {
+	font-weight: bolder;
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	margin-left: 20px;
+}
+#modal li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+#modal li a {
+	text-decoration: none;
+	color: #fff;
+}
+#modal li a:hover {
+	color: grey;
+}
+#modal li a:hover,
+#modal li a.active {
+	color: #0fb8ac;
+}
+#modal li a.active::after,
+#navbar1 li a:hover::after {
+	content: "";
+	width: 30%;
+	height: 2px;
+	background-color: #63b6b0;
+	position: absolute;
+	bottom: -4px;
+	left: 20px;
+}
+
+/* media query for hamburger menu */
+@media (min-width: 690px) {
+	.mobile_nav {
+		display: none;
+	}
+	.hamburger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	#modal {
+		background-color: rgb(13, 33, 71);
+	}
+	#modal ul {
+		display: none;
+	}
+
+	#modal .hamburger {
+		display: block;
+		cursor: pointer;
+		height: 25px;
+	}
+	.bar {
+		color: white;
+		cursor: pointer;
+		font-size: 28px;
+		position: absolute;
+		top: 0;
+		right: 12px;
+		font-weight: bolder;
+		cursor: pointer;
+		transform: rotate(45deg);
+	}
+	.mobile_nav {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 100%;
+		width: 100%;
+		min-height: 100vh;
+		z-index: 98;
+		padding-top: 120px;
+		background-color: grey;
+		transition: 0.4s;
+		padding-top: 120px;
+	}
+
+	.mobile_nav li {
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 26px;
+		background-color: rgb(10, 14, 22);
+		max-width: 120px;
+		margin-left: 40%;
+		border-radius: 20px;
+		color: white;
+		cursor: pointer;
+	}
+	.mobile_nav li:hover {
+		background-color: rgb(11, 51, 124);
+	}
+	li a {
+		text-decoration: none;
+	}
+}
+
+#The_problem {
+	display: flex;
+	margin-top: 4em;
+	margin-left: 2em;
+}
+
+#The_problem img {
+	background-color: #088178;
+	display: flex;
+	height: 30%;
+	width: 50%;
+}
+#The_problem div {
+	font-weight: bolder;
+	width: 30%;
+	margin-left: 2em;
+}
+
+#education4all {
+	display: flex;
+	margin-top: 4em;
+	margin-left: 2em;
+}
+#education4all img {
+	display: flex;
+	height: 30%;
+	width: 50%;
+}
+#education4all div {
+	margin-left: 2em;
+	font-weight: bolder;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	width: 30%;
+}
+
+.btn {
+	width: 150px;
+	height: 40px;
+	background-color: grey;
+	border-style: hidden;
+	cursor: pointer;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 3em;
+}
+.btn:hover {
+	background-color: rgb(69, 49, 124);
+}
+
+.ourpartners {
+	margin-top: 4em;
+	margin-left: 2em;
+}
+.ourpartners h3 {
+	text-align: center;
+}
+.boxes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.box {
+	width: 30%;
+	height: 125px;
+	background-color: grey;
+	margin: 0.5em;
+}
+
+/* FOOTER */
+#footer {
+	background-image: url(images/fancy-cushion\ 1.png);
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background-color: rgb(156, 135, 135);
+	color: white;
+}
+
+#footer li {
+	list-style: none;
+}
+
+#footer img {
+	width: 39px;
+	margin-left: 2px;
+}
+
+.smallTxt {
+	color: aqua;
+	font-weight: 100;
+	font-size: xx-small;
+	font-family: "Courier New", Courier, monospace;
+}
